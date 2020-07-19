@@ -5,12 +5,17 @@ import java.util.ArrayList;
 public class Deck {
     public ArrayList<Card> cards;
 
-    public Deck(ArrayList<Card> cards) {
-        this.cards = cards;
+    public Deck() {
+        this.cards = new ArrayList<Card>();
     }
 
     public void createFullDeck() {
-
+        for (Suit cardSuit : Suit.values()) {
+            for (Value cardValue : Value.values()) {
+                Card card = new Card(cardSuit, cardValue);
+                cards.add(card);
+            }
+        }
 
     }
 
