@@ -11,6 +11,7 @@ public class Deck {
 
     public void createFullDeck() {
 
+
     }
 
     public void shuffle() {
@@ -38,7 +39,7 @@ public class Deck {
     }
 
     public void moveAllToDeck() {
-        
+
     }
 
     public ArrayList<Card> getCards() {
