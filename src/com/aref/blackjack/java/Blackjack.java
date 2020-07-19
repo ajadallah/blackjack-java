@@ -1,8 +1,18 @@
 package com.aref.blackjack.java;
 
-public class Blackjack {
+import com.aref.blackjack.java.model.Deck;
 
-    public static void main(String[] args) {
-	System.out.println("Hello World");
-    }
+public class Blackjack {
+	public static void main(String[] args) {
+		// Welcome message
+		System.out.println("Welcome to Blackjack");
+
+		// Create Deck
+		Deck deck = new Deck();
+		deck.createFullDeck();
+		deck.shuffle();
+
+		System.out.println(deck
+						.toString());
+	}
 }
